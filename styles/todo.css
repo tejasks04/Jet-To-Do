@@ -1,0 +1,189 @@
+body {
+  font-family: Arial;
+  margin: 0px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4ItnHpJivB6Xyu0_DQnY43uFV1cNKc7TaA&s");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 70px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.output-grid,
+.input-grid {
+  display: grid;
+  grid-template-columns: 200px, 150px, 150px, 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.todo-title{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+  background-image: url("https://img.freepik.com/premium-photo/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface_84485-1698.jpg") ;
+}
+.todo-grid{
+  display: grid;
+  grid-template-columns: 200px 150px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: left;
+  max-width: 640px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: stretch;
+  justify-content: left;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.todo-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+  margin-right: 20px;
+  margin-left: 50px;
+  max-width: 110px;
+}
+.name-input{
+  margin-right: 20px;
+  padding: 10px;
+}
+.img1{
+  height: 180px;
+  width: 180px;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.due-time-input{
+  font-size: 15px;
+  padding: 6px;
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.add-todo-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.add-todo-button:hover {
+  transform: scale(1.1);
+}
+
+.delete-todo-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-todo-button:hover {
+  transform: scale(1.1);
+}
+
+.js-empty{
+ color: red;
+ margin-left: 100px;
+}
+.To-do{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 60px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 900;
+  margin-left: -50px;
+}
+.ot-name,
+.ot{
+  margin-bottom: 30px;
+}
+.ot-date{
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.input-flex,
+.output-flex{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.headlines{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.names,
+.times,
+.dates{
+  margin-right: 90px;
+  font-size: 15px;
+}
+.dates{
+  margin-left: 70px;
+}
+.names{
+  margin-right: 60px;
+}
+.progress,
+.soon{
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  justify-content: center;
+  font-weight: 900;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.progress {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+  margin-top: -10px;
+  animation: zoomInOut 2s infinite;
+}

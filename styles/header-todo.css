@@ -1,0 +1,60 @@
+.header-todo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; 
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkwNC1udW5ueS0wMTJfMi5qcGc.jpg");
+  height: 70px;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.home,
+.projects,
+.about{
+  height: 25px;
+  width: 30px;
+  margin-right: 10px;
+}
+.about{
+  height: 30px;
+}
+.middle-name,
+.home-name,
+.about-us{
+  font-size: 15px;
+}
+.h-flex-1,
+.h-flex-2,
+.h-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 10px;
+  font-weight: bold;
+}
+.h-flex{
+  margin-left: 50px;
+}
+.h-flex-2{
+  margin-right: 50px;
+}
+.my-logo{
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.my-name{
+  height: 130px;
+  margin-top: 5px;
+}
